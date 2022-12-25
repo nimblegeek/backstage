@@ -1,1 +1,3 @@
 # Backstage override configuration for your local development environment
+
+url: http://localhost:7007/api/auth/github/handler/frame

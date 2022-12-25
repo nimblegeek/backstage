@@ -3,4 +3,6 @@
 Authentication:
   github:
     name: backstage_dev
-    url: http://localhost:7007/api/auth/github/handler/frame
+    url:
+      home: http://local:3000/
+      fallback: http://localhost:7007/api/auth/github/handler/frame

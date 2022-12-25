@@ -94,7 +94,6 @@ import {
 import { defaultPreviewTemplate } from './components/scaffolder/defaultPreviewTemplate';
 import { searchPage } from './components/search/SearchPage';
 import * as plugins from './plugins';
-
 import { techDocsPage } from './components/techdocs/TechDocsPage';
 import { ApacheAirflowPage } from '@backstage/plugin-apache-airflow';
 import { RequirePermission } from '@backstage/plugin-permission-react';

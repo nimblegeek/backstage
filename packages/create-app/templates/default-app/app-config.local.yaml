@@ -1,8 +1,12 @@
 # Backstage override configuration for your local development environment
 
-Authentication:
-  github:
-    name: backstage_dev
-    url:
-      home: http://local:3000/
-      fallback: http://localhost:7007/api/auth/github/handler/frame
+backend:
+  database:
+  # ...
+auth:
+  environment: development
+  providers:
+    github:
+      development:
+        clientId: b213e8cef6b436bcc39c
+        clientSecret: 58761dc32c3c28446d4f8995f427ddd79815c1ba

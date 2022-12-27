@@ -113,15 +113,24 @@ const githubProvider: SignInProviderConfig = {
 
 const app = createApp({
   apis,
+  components: {
+    SignInPage: props => (
+      <SignInPage
+        {...props}
+        auto
+        provider={{
+          id: 'github-auth-provider',
+          title: 'GitHub',
+          message: 'Sign in using GitHub',
+          apiRef: githubAuthApiRef,
+        }}
+      />
+    ),
+  },
   plugins: Object.values(plugins),
   icons: {
     // Custom icon example
     alert: AlarmIcon,
-  },
-  components: {
-    SignInPage: props => (
-      <SignInPage {...props} auto provider={githubProvider} />
-    ),
   },
 
   bindRoutes({ bind }) {
